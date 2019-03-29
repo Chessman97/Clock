@@ -6,4 +6,9 @@ public class TestTime {
     void testCreateTime() {
         Time time = new Time();
     }
+
+    @Test
+    void testCreateConcrateTime() {
+        Time time = new Time(5, 10);
+    }
 }
