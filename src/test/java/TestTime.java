@@ -1,5 +1,5 @@
-import clock.Clock;
 import org.junit.jupiter.api.Test;
+import time.Time;
 
 public class TestTime {
     @Test
