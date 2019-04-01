@@ -13,5 +13,8 @@ public class TestClock {
     void getClock(){
         Clock clock = new Clock(new Time(5, 10));
         assertEquals(new Time(5,10), clock.getTime());
+
+        Clock clock1 = new Clock(new Time(10, 11));
+        assertEquals(new Time(10,11), clock1.getTime());
     }
 }
