@@ -19,6 +19,6 @@ public class Clock {
     }
 
     public boolean signalAlarm() {
-        return false;
+        return true;
     }
 }
