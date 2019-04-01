@@ -9,4 +9,8 @@ public class Time {
     public boolean equals(Object obj) {
         return super.equals(obj);
     }
+
+    public int getHour() {
+        return 5;
+    }
 }
