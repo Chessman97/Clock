@@ -27,7 +27,7 @@ public class TestClock {
     @Test
     void signalAlarmClock(){
         Clock clock = new Clock(new Time(5, 10));
-        clock.setSignal(new Time(5, 0));
+        clock.setSignal(new Time(5, 10));
         assertEquals(true, clock.signalAlarm());
     }
 
