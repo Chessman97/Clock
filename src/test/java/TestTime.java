@@ -20,6 +20,9 @@ public class TestTime {
     void testGetHour(){
         Time time = new Time(5, 10);
         assertEquals(5, time.getHour());
+
+        Time time1 = new Time (11, 55);
+        assertEquals(11, time1.getHour());
     }
 
     @Test
