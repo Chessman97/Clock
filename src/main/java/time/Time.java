@@ -2,9 +2,11 @@ package time;
 
 public class Time {
     private int hour;
+    private int minute;
 
     public Time(int hour, int minute) {
         this.hour = hour;
+        this.minute = minute;
     }
 
     @Override
@@ -21,6 +23,6 @@ public class Time {
     }
 
     public int getMinute() {
-        return 10;
+        return minute;
     }
 }
