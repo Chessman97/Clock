@@ -21,27 +21,23 @@ public class TestClock {
     @Test
     void setSignalClock(){
         Clock clock = new Clock(new Time(5, 10));
-        clock.setSignal(new Time(5, 0));
+        clock.setSignal(new Time(5, 0), 5);
     }
 
     @Test
     void signalAlarmClock(){
         Clock clock = new Clock(new Time(5, 10));
-        clock.setSignal(new Time(5, 10));
+        clock.setSignal(new Time(5, 10), 5);
         assertEquals(true, clock.signalAlarm());
     }
 
     @Test
     void notSignalAlarmClock(){
         Clock clock = new Clock(new Time(5, 10));
-        clock.setSignal(new Time(6, 0));
+        clock.setSignal(new Time(6, 0), 5);
         assertEquals(false, clock.signalAlarm());
     }
 
-    @Test
-    void setAlarmClock(){
-        Clock clock = new Clock(new Time(5, 10));
-        clock.setAlarm(5);
-    }
+
 
 }

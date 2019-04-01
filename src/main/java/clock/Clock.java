@@ -5,6 +5,7 @@ import time.Time;
 public class Clock {
 
     private Time time;
+    private int alarmed;
     private Time signalTime;
     public Clock(Time time) {
         this.time = time;
@@ -14,8 +15,9 @@ public class Clock {
         return time;
     }
 
-    public void setSignal(Time time) {
+    public void setSignal(Time time, int i) {
         signalTime = time;
+
     }
 
     public boolean signalAlarm() {
