@@ -15,16 +15,13 @@ public class Clock {
         return time;
     }
 
-    public void setSignal(Time time, int i) {
+    public void setSignal(Time time, int alarmed) {
         signalTime = time;
-
+        this.alarmed = alarmed;
     }
 
     public boolean signalAlarm() {
         return time.equals(signalTime);
     }
 
-    public void setAlarm(int i) {
-
-    }
 }
