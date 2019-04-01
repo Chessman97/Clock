@@ -21,7 +21,7 @@ public class Clock {
     }
 
     public boolean signalAlarm() {
-        return time.equals(signalTime);
+        return time.sub(signalTime) < 5;
     }
 
 }
