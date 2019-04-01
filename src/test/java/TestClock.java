@@ -40,14 +40,17 @@ public class TestClock {
 
     @Test
     void alarmFiveMinutesClock(){
-        Time time = new Time(5, 10);
+        Time time = new Time(5, 9);
         Clock clock = new Clock(time);
         clock.setSignal(new Time(5, 10), 5);
+        assertEquals(false, clock.signalAlarm());
+        time.setTime(5, 10);
         assertEquals(true, clock.signalAlarm());
         time.setTime(5, 11);
         assertEquals(true, clock.signalAlarm());
         time.setTime(5, 15);
         assertEquals(false, clock.signalAlarm());
+
     }
 
 }
