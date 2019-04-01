@@ -33,4 +33,5 @@ public class TestTime {
         Time time1 = new Time (11, 55);
         assertEquals(55, time1.getMinute());
     }
+
 }
