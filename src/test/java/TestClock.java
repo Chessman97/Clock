@@ -54,8 +54,8 @@ public class TestClock {
 
     @Test
     void signingAlarmClock(){
-        Clock clock = new Clock(new Time(5, 10));
-        clock.setSignal(new Time(5, 19), 10);
+        Clock clock = new Clock(new Time(5, 9));
+        clock.setSignal(new Time(5, 0), 10);
         assertEquals(true, clock.signalAlarm());
     }
 }
