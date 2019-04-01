@@ -17,4 +17,8 @@ public class Clock {
     public void setSignal(Time time) {
         signalTime = time;
     }
+
+    public boolean signalAlarm() {
+        return false;
+    }
 }

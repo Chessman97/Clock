@@ -22,6 +22,12 @@ public class TestClock {
     void setSignalClock(){
         Clock clock = new Clock(new Time(5, 10));
         clock.setSignal(new Time(5, 0));
+    }
 
+    @Test
+    void signalAlarmClock(){
+        Clock clock = new Clock(new Time(5, 10));
+        clock.setSignal(new Time(5, 0));
+        assertEquals(true, clock.signalAlarm());
     }
 }
