@@ -15,4 +15,10 @@ public class TestTime {
         Time time = new Time(5, 10);
         assertEquals(new Time(5, 10), time);
     }
+
+    @Test
+    void testGetHour(){
+        Time time = new Time(5, 10);
+        assertEquals(5, time.getHour());
+    }
 }
