@@ -25,4 +25,8 @@ public class Time {
     public int getMinute() {
         return minute;
     }
+
+    public int sub(Time time) {
+        return 0;
+    }
 }

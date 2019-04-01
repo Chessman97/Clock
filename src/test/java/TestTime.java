@@ -34,4 +34,10 @@ public class TestTime {
         assertEquals(55, time1.getMinute());
     }
 
+    @Test
+    void testSubTime(){
+        Time time = new Time(0, 0);
+        Time time1 = new Time(0, 5);
+        assertEquals(5, time1.sub(time));
+    }
 }

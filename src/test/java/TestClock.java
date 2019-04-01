@@ -37,4 +37,6 @@ public class TestClock {
         clock.setSignal(new Time(6, 0));
         assertEquals(false, clock.signalAlarm());
     }
+
+
 }
