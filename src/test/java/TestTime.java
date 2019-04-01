@@ -41,5 +41,13 @@ public class TestTime {
         assertEquals(5, time1.sub(time));
     }
 
-
+    @Test
+    void testSetMinuteTime(){
+        Time time = new Time(0, 0);
+        assertEquals(0, time.getHour());
+        assertEquals(0, time.getMinute());
+        time.setTime(5, 10);
+        assertEquals(5, time.getHour());
+        assertEquals(10, time.getMinute());
+    }
 }

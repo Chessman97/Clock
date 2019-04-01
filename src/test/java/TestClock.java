@@ -38,6 +38,13 @@ public class TestClock {
         assertEquals(false, clock.signalAlarm());
     }
 
+    @Test
+    void alarmFiveMinutesClock(){
+        Time time = new Time(5, 10);
+        Clock clock = new Clock(time);
+        clock.setSignal(new Time(5, 10), 5);
+        assertEquals(true, clock.signalAlarm());
 
+    }
 
 }
