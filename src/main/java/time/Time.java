@@ -13,4 +13,8 @@ public class Time {
     public int getHour() {
         return 5;
     }
+
+    public int getMinute() {
+        return 10;
+    }
 }
