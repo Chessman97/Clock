@@ -27,7 +27,7 @@ public class Time {
     }
 
     public int sub(Time time) {
-        return Math.abs(time.getMinute() - getMinute());
+        return getMinute() - time.getMinute();
     }
 
     public void setTime(int hour, int minute) {
