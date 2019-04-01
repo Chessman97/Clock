@@ -30,4 +30,11 @@ public class TestClock {
         clock.setSignal(new Time(5, 0));
         assertEquals(true, clock.signalAlarm());
     }
+
+    @Test
+    void notSignalAlarmClock(){
+        Clock clock = new Clock(new Time(5, 10));
+        clock.setSignal(new Time(6, 0));
+        assertEquals(false, clock.signalAlarm());
+    }
 }
