@@ -7,7 +7,11 @@ public class Time {
 
     @Override
     public boolean equals(Object obj) {
-        return super.equals(obj);
+        if (obj instanceof Time) {
+            Time t = (Time) obj;
+            return getHour() == t.getHour() && getMinute() == t.getMinute();
+        }
+        return false;
     }
 
     public int getHour() {
