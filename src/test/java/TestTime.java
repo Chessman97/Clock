@@ -40,4 +40,6 @@ public class TestTime {
         Time time1 = new Time(0, 5);
         assertEquals(5, time1.sub(time));
     }
+
+
 }

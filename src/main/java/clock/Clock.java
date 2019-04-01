@@ -21,4 +21,8 @@ public class Clock {
     public boolean signalAlarm() {
         return time.equals(signalTime);
     }
+
+    public void setAlarm(int i) {
+
+    }
 }

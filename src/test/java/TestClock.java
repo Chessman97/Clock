@@ -38,5 +38,10 @@ public class TestClock {
         assertEquals(false, clock.signalAlarm());
     }
 
+    @Test
+    void setAlarmClock(){
+        Clock clock = new Clock(new Time(5, 10));
+        clock.setAlarm(5);
+    }
 
 }
