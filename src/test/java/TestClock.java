@@ -50,7 +50,12 @@ public class TestClock {
         assertEquals(true, clock.signalAlarm());
         time.setTime(5, 15);
         assertEquals(false, clock.signalAlarm());
-
     }
 
+    @Test
+    void signingAlarmClock(){
+        Clock clock = new Clock(new Time(5, 10));
+        clock.setSignal(new Time(5, 19), 10);
+        assertEquals(true, clock.signalAlarm());
+    }
 }
