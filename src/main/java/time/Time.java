@@ -1,8 +1,10 @@
 package time;
 
 public class Time {
-    public Time(int hour, int minute) {
+    private int hour;
 
+    public Time(int hour, int minute) {
+        this.hour = hour;
     }
 
     @Override
@@ -15,7 +17,7 @@ public class Time {
     }
 
     public int getHour() {
-        return 5;
+        return hour;
     }
 
     public int getMinute() {
