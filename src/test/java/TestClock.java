@@ -44,7 +44,10 @@ public class TestClock {
         Clock clock = new Clock(time);
         clock.setSignal(new Time(5, 10), 5);
         assertEquals(true, clock.signalAlarm());
-
+        time.setTime(5, 11);
+        assertEquals(true, clock.signalAlarm());
+        time.setTime(5, 15);
+        assertEquals(false, clock.signalAlarm());
     }
 
 }
