@@ -27,6 +27,6 @@ public class Time {
     }
 
     public int sub(Time time) {
-        return 0;
+        return Math.abs(time.getMinute() - getMinute());
     }
 }
